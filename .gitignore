@@ -10,11 +10,23 @@
 /test/version_tmp/
 /tmp/
 
+
+/log/*
+/tmp/*
+/vendor/bundle
+.byebug_history
+/.env
+.env*
+/node_modules
+/storage
+/public/packs
+
+# Docker
+*.pid
+docker-compose.override.yml
+
 # Used by dotenv library to load environment variables.
 # .env
-
-# Ignore Byebug command history file.
-.byebug_history
 
 ## Specific to RubyMotion:
 .dat*
@@ -40,7 +52,6 @@ build-iPhoneSimulator/
 
 ## Environment normalization:
 /.bundle/
-/vendor/bundle
 /lib/bundler/man/
 
 # for a library or gem, you might want to ignore these files since the code is
