@@ -1,11 +1,12 @@
 Project Title: Blog Platform with Live Comments and Newsletter System
 Version: 1.0
 Date: May 26, 2025
-Author: Juan Felipe Duarte
+Author: Juan Felipe
 
 1. Introduction
-   1.1 Purpose
-   The purpose of this document is to outline the software design of a Blog Platform built using Ruby on Rails 8. The platform will allow users to read and publish blog posts, leave live comments in real time, and subscribe to a newsletter system.
+
+1.1 Purpose
+The purpose of this document is to outline the software design of a Blog Platform built using Ruby on Rails 8. The platform will allow users to read and publish blog posts, leave live comments in real time, and subscribe to a newsletter system.
 
 1.2 Scope
 The application will:
@@ -21,10 +22,10 @@ Provide a newsletter subscription feature with email delivery.
 Offer admin dashboard capabilities.
 
 2. System Overview
-   This is a full-stack monolithic web application using Ruby on Rails 8. PostgreSQL will be the primary data store. Hotwire will be used for real-time features. ActionMailer will handle newsletters.
+This is a full-stack monolithic web application using Ruby on Rails 8. PostgreSQL will be the primary data store. Hotwire will be used for real-time features. ActionMailer will handle newsletters.
 
 3. Technologies
-   Backend: Ruby on Rails 8
+Backend: Ruby on Rails 8
 
 Frontend: Turbo + Stimulus (Hotwire)
 
@@ -41,8 +42,9 @@ Styling: Tailwind CSS
 Deployment: Render.com / Fly.io / Heroku (TBD)
 
 4. Architecture
-   4.1 MVC Pattern
-   Models: Post, User, Comment, Subscription, Newsletter
+
+4.1 MVC Pattern
+Models: Post, User, Comment, Subscription, Newsletter
 
 Views: ERB templates with Turbo Frames and Streams
 
@@ -69,7 +71,7 @@ Newsletter content is written and sent via admin panel.
 Uses ActionMailer with HTML + plaintext support.
 
 5. Database Design (ERD Overview)
-   Users
+Users
 
 id
 
@@ -122,10 +124,10 @@ content
 sent_at
 
 6. API Design
-   (Optional if you expose any RESTful endpoints for future frontend apps)
+(Optional if you expose any RESTful endpoints for future frontend apps)
 
 7. Security Considerations
-   CSRF protection enabled
+CSRF protection enabled
 
 Strong password policies
 
@@ -134,7 +136,7 @@ Email confirmation for subscriptions
 Role-based access control via Pundit
 
 8. Future Enhancements
-   Markdown editor for blog posts
+Markdown editor for blog posts
 
 Comment moderation
 
